@@ -1,15 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <meta charset="utf-8" />
     <title>The Hayden Lowry Website</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <!--Title-->
     <h1>My Preferred name is Hayden.</h1><br />
 
     <!--Image-->
-    <img src="img/2C6E03F7-BBA8-4BAC-A4C8-64FA150321D8_1_105_c.jpeg" /><br />
+    <h2>Disc Golfing with the Fam</h2>
+    <img src="img/2C6E03F7-BBA8-4BAC-A4C8-64FA150321D8_1_105_c.jpeg" /><br /><br />
 
     <!--p-tag-->
     <p>
@@ -29,8 +34,29 @@
 
     <!--Form-->
     <h4>Grade Calculator</h4>
+    <p>input as percentage as number between 1-100:</p>
     <form>
-        <label></label>
-    </form>
+        <label>Assignments</label>
+        <input type="number" id="assign" min="0" max="100" /><br />
+        <label>Group Project</label>
+        <input type="number" id="gp" min="0" max="100" /><br />
+        <label>Quizzes</label>
+        <input type="number" id="quiz" min="0" max="100" /><br />
+        <label>Midterm Exam</label>
+        <input type="number" id="me" min="0" max="100" /><br />
+        <label>Final Exam</label>
+        <input type="number" id="fe" min="0" max="100" /><br />
+        <label>INTEX</label>
+        <input type="number" id="intex" min="0" max="100" /><br />
+        <button id="gcbutton" type="button">Submit</button>
+    </form><br />
+    <h5 id="letgrade"></h5>
+    <h5 id="totalgrade"></h5>
+    <br /><br /><br /><br />
+
+    <!--Javascript files-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/grade_calc.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
